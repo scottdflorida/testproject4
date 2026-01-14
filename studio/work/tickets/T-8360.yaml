@@ -1,0 +1,31 @@
+id: "T-8360"
+project_id: "testproject4"
+title: "Validate mixed inputs (note + file) and file required_output enforcement"
+agent: "engineer"
+status: "ready"
+priority: "P2"
+
+inputs:
+  - type: note
+    text: "This is a validation ticket. Do not change game logic. Goal is to confirm the runtime accepts conceptual inputs and file-path inputs together."
+  - type: file
+    path: "studio/work/tickets/T-9001.yaml"
+
+allowed_writes:
+  - "studio/work/traces/**"
+  - "studio/work/runs/**"
+
+required_outputs:
+  - type: file
+    path: "studio/work/traces/T-9001_trace.json"
+  - type: note
+    text: "Trace must explicitly state that it consumed (a) the note input and (b) the file input at studio/work/tickets/T-9001.yaml."
+
+acceptance_criteria:
+  - "Run succeeds and creates a PR"
+  - "PR contains studio/work/traces/T-9001_trace.json"
+  - "No files are modified outside studio/work/traces/** and studio/work/runs/**"
+  - "Trace text confirms both the note input and file input were read"
+
+iteration_limits:
+  max_attempts: 1
