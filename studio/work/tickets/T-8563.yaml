@@ -22,4 +22,4 @@ acceptance_criteria:
   - "A pull request is created containing only trace artifacts"
 
 iteration_limits:
-  max_attempts: 3
+  max_attempts: 5
