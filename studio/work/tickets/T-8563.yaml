@@ -6,7 +6,7 @@ status: "ready"
 priority: "P3"
 
 inputs:
-  - "No external inputs. This is a system validation run."
+  []
 
 allowed_writes:
   - "studio/work/traces/**"
