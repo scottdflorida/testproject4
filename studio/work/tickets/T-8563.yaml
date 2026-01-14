@@ -1,0 +1,25 @@
+id: "T-8563"
+project_id: "testproject4"
+title: "Validate agent run loop and trace output"
+agent: "engineer"
+status: "ready"
+priority: "P3"
+
+inputs:
+  - "No external inputs. This is a system validation run."
+
+allowed_writes:
+  - "studio/work/traces/**"
+  - "studio/work/runs/**"
+
+required_outputs:
+  - "A single trace file describing the reasoning steps taken during this run."
+
+acceptance_criteria:
+  - "A trace file is produced under studio/work/traces/"
+  - "No files are written outside the allowed_writes paths"
+  - "The run completes within the iteration limit"
+  - "A pull request is created containing only trace artifacts"
+
+iteration_limits:
+  max_attempts: 1
