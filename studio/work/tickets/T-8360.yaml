@@ -28,4 +28,4 @@ acceptance_criteria:
   - "Trace text confirms both the note input and file input were read"
 
 iteration_limits:
-  max_attempts: 1
+  max_attempts: 3
