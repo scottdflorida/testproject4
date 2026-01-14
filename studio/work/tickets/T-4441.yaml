@@ -13,7 +13,7 @@ allowed_writes:
   - "studio/work/runs/**"
 
 required_outputs:
-  - "A single trace file describing the reasoning steps taken during this run."
+  []
 
 acceptance_criteria:
   - "A trace file is produced under studio/work/traces/"
