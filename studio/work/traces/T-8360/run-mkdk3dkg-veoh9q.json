@@ -1,0 +1,15 @@
+{
+  "ticket_id": "T-8360",
+  "project_id": "testproject4",
+  "timestamp": "2026-01-14T05:04:28.038Z",
+  "agent_profile": "engineer",
+  "files_read": [],
+  "files_written": [],
+  "decisions": [],
+  "assumptions": [],
+  "risks": [
+    "ERROR: Failed to read input file: studio/work/tickets/T-9001.yaml"
+  ],
+  "open_questions": [],
+  "summary": "Run failed: Failed to read input file: studio/work/tickets/T-9001.yaml"
+}
